@@ -1,5 +1,3 @@
----
-
 # MovieLens Two-Tower Retrieval System
 
 A production-style recommendation retrieval project built on MovieLens 1M Dataset.
