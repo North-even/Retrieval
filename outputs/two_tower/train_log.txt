@@ -1,0 +1,25 @@
+model=TwoTower
+num_users=6038
+num_items=3533
+num_genres=18
+embed_dim=64
+batch_size=1024
+lr=0.001
+epochs=10
+max_history_len=20
+max_genre_len=6
+
+epoch=1, train_loss=0.381138
+epoch=2, train_loss=0.267376
+epoch=3, train_loss=0.244639
+epoch=4, train_loss=0.228352
+epoch=5, train_loss=0.214523
+epoch=6, train_loss=0.202545
+epoch=7, train_loss=0.192205
+epoch=8, train_loss=0.183980
+epoch=9, train_loss=0.178784
+epoch=10, train_loss=0.173582
+
+Training finished.
+Best epoch: 10
+Best train loss: 0.173582

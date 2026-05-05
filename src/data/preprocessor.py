@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 
 import pandas as pd
@@ -73,6 +74,15 @@ def main():
     train_df.to_csv(output_dir / "train.csv", index=False)
     valid_df.to_csv(output_dir / "valid.csv", index=False)
     test_df.to_csv(output_dir / "test.csv", index=False)
+
+    idx2movie = {int(v): int(k) for k, v in movie2idx.items()}
+    idx2user = {int(v): int(k) for k, v in user2idx.items()}
+
+    with open(output_dir / "idx2movie.json", "w", encoding="utf-8") as f:
+        json.dump(idx2movie, f)
+
+    with open(output_dir / "idx2user.json", "w", encoding="utf-8") as f:
+        json.dump(idx2user, f)
 
     print("Preprocessing finished.")
     print(f"num_users: {len(user2idx)}")

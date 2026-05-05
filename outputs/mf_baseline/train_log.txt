@@ -1,0 +1,21 @@
+model=MF
+num_users=6038
+num_items=3533
+embed_dim=64
+batch_size=1024
+lr=0.001
+epochs=10
+
+epoch=1, train_loss=0.495414
+epoch=2, train_loss=0.292527
+epoch=3, train_loss=0.265345
+epoch=4, train_loss=0.245564
+epoch=5, train_loss=0.230522
+epoch=6, train_loss=0.217833
+epoch=7, train_loss=0.206979
+epoch=8, train_loss=0.198540
+epoch=9, train_loss=0.190363
+epoch=10, train_loss=0.183519
+
+Training finished.
+Best train loss: 0.183519
